@@ -22,6 +22,7 @@ my $alertm = 0;				# first alert-count modify time
 
 my %opt;				# command-line options
 $opt{conf} = "/etc/ganglia/ganglia-alert.conf";
+$opt{log_file} = "/var/log/ganglia-alert.log";
 
 my %default;				# default config values
 
