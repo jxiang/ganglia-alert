@@ -277,6 +277,7 @@ sub xtag {
 			}
 		}
 		if ($vals{name}) {
+                        $vals{name} =~ s/[\.\-]/_/g;
 			$r{lc($tag)}->{$vals{name}} = \%vals;
 		} else {
 			push @{$r{lc($tag)}}, \%vals;

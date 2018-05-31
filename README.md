@@ -12,6 +12,9 @@ To set up ganglia alerts, follow these steps:
 to ganglia-alert and put it under /etc/init.d
 3. Create a configuration file ganglia-alert.conf, and
 put it unser /etc/ganglia. For the syntax of configuration
-file, check "ganglia-alert --help"
+file, check "ganglia-alert --help". Note: you need to
+replace all ./- in metric names to _. For example,
+jvm.JvmMetrics.MemHeapMaxM should be changed to
+jvm_JvmMetrics_MemHeapMaxM
 4. Now you can start/stop the alert service, and check
 its status
