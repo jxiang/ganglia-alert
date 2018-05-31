@@ -21,7 +21,7 @@ my $readlast=0;				# last time config was read
 my $alertm = 0;				# first alert-count modify time
 
 my %opt;				# command-line options
-$opt{conf} = "/etc/ganglia-alert.conf";
+$opt{conf} = "/etc/ganglia/ganglia-alert.conf";
 
 my %default;				# default config values
 
